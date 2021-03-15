@@ -119,6 +119,10 @@ Usage of ./vodafone-station-exporter:
 * `vodafone_station_logout_message_info`: Logout message returned by the web interface
   - Labels: `message`
 
+## Running as Docker
+
+`docker run -d --restart unless-stopped -p 9420:9420 -e VF_STATION_PASS=<password> -e VF_STATION_URL=http://192.168.0.1 momorientes/vodafone-station-exporter`
+
 ## Reverse Engineering the login mechanism
 > I am not a Javascript engineer, but it works :man_shrugging:
 
